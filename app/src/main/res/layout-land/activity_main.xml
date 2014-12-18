@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.timthomasma.makechange.MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/priceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price: $"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/editPriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:text="" >
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/goButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:text="Go" />
+
+                    <Button
+                        android:id="@+id/doneButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Done" />
+
+                    <Button
+                        android:id="@+id/newButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New" />
+
+                    <TextView
+                        android:id="@+id/levelView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Le"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tenderedTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Paid: $147.89"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/toCustomerTextViewr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="   Change: $147.89"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewQuarter"
+                        style="@style/CoinsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="Quarters"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/radioQuarter0"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#f1efee" />
+
+                    <Button
+                        android:id="@+id/radioQuarter1"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1e7f2" />
+
+                    <Button
+                        android:id="@+id/radioQuarter2"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1e7f2" />
+
+                    <Button
+                        android:id="@+id/radioQuarter3"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1e7f2" />
+
+                    <Button
+                        android:id="@+id/radioQuarter4"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1e7f2" />
+
+                    <Button
+                        android:id="@+id/radioTwenty0"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#f1efee" />
+
+                    <Button
+                        android:id="@+id/radioTwenty1"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1f2e7" />
+
+                    <Button
+                        android:id="@+id/radioTwenty2"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1f2e7" />
+
+                    <Button
+                        android:id="@+id/radioTwenty3"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1f2e7" />
+
+                    <Button
+                        android:id="@+id/radioTwenty4"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1f2e7" />
+
+                    <TextView
+                        android:id="@+id/textViewTwenty"
+                        style="@style/CoinsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$20s"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewDime"
+                        style="@style/CoinsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="Dimes   "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/radioDime0"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#f1efee" />
+
+                    <Button
+                        android:id="@+id/radioDime1"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#c9d3e8" />
+
+                    <Button
+                        android:id="@+id/radioDime2"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#c9d3e8" />
+
+                    <Button
+                        android:id="@+id/radioDime3"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#c9d3e8" />
+
+                    <Button
+                        android:id="@+id/radioDime4"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#c9d3e8" />
+
+                    <Button
+                        android:id="@+id/radioTen0"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#f1efee" />
+
+                    <Button
+                        android:id="@+id/radioTen1"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#cae7d4" />
+
+                    <Button
+                        android:id="@+id/radioTen2"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#cae7d4" />
+
+                    <Button
+                        android:id="@+id/radioTen3"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#cae7d4" />
+
+                    <Button
+                        android:id="@+id/radioTen4"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#cae7d4" />
+
+                    <TextView
+                        android:id="@+id/textViewTen"
+                        style="@style/CoinsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$10s"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewNickel"
+                        style="@style/CoinsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="Nickels "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/radioNickel0"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#f1efee" />
+
+                    <Button
+                        android:id="@+id/radioNickel1"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1e7f2" />
+
+                    <Button
+                        android:id="@+id/radioNickel2"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1e7f2" />
+
+                    <Button
+                        android:id="@+id/radioNickel3"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1e7f2" />
+
+                    <Button
+                        android:id="@+id/radioNickel4"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1e7f2" />
+
+                    <Button
+                        android:id="@+id/radioFive0"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#f1efee" />
+
+                    <Button
+                        android:id="@+id/radioFive1"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1f2e7" />
+
+                    <Button
+                        android:id="@+id/radioFive2"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1f2e7" />
+
+                    <Button
+                        android:id="@+id/radioFive3"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1f2e7" />
+
+                    <Button
+                        android:id="@+id/radioFive4"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#e1f2e7" />
+
+                    <TextView
+                        android:id="@+id/textViewFive"
+                        style="@style/CoinsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$5s "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewPenny"
+                        style="@style/CoinsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="Pennies "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/radioPenny0"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#f1efee"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/radioPenny1"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#c9d3e8"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/radioPenny2"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#3a5589"
+                        android:text="2"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/radioPenny3"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#c9d3e8"
+                        android:text="3" />
+
+                    <Button
+                        android:id="@+id/radioPenny4"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#c9d3e8"
+                        android:text="4" />
+
+                    <Button
+                        android:id="@+id/radioOne0"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#685a56"
+                        android:text="0"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/radioOne1"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#3c8756"
+                        android:text="1"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/radioOne2"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#cae7d4"
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/radioOne3"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#cae7d4"
+                        android:text="3" />
+
+                    <Button
+                        android:id="@+id/radioOne4"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="1dp"
+                        android:background="#cae7d4"
+                        android:text="4" />
+
+                    <TextView
+                        android:id="@+id/textViewOne"
+                        style="@style/CoinsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1s "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </TableRow>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>
